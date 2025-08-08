@@ -9,16 +9,19 @@ const Navbar = ({ scrollToSection }) => {
 
   const navbarItems = [
     { title: "Home", key: "home", link: "/" },
-    { title: "How it Works", key: "howWorks", link: "#howWorks" },
+    { title: "Salah Timings", key: "howWorks", link: "#howWorks" },
     { title: "Safety & Trust", key: "security", link: "#security" },
-    { title: "Contact Us", key: "contact", link: "#contact" },
+    { title: "Quran Classes", key: "contact", link: "#contact" },
+    { title: "Arabic Language", key: "contact", link: "#contact" },
+    { title: "Salah Timings", key: "contact", link: "#contact" },
+    { title: "Seminars", key: "contact", link: "#contact" },
   ];
 
   return (
     <>
       <Container>
         <Wrapper>
-          <LogoIcon src="/images/logo.svg" />
+          <LogoIcon src="/images/whitelogo.png" />
           <NavbarSection>
             {navbarItems.map((item, index) => (
               <a href={item.link} key={index}>
@@ -30,7 +33,7 @@ const Navbar = ({ scrollToSection }) => {
           </NavbarSection>
           <ButtonWrapper>
             <Button onClick={() => setOpenModal(true)}>
-              Get Early Access Now
+              Bookings
             </Button>
           </ButtonWrapper>
           <SidebarWrapper>
@@ -47,6 +50,7 @@ export default Navbar;
 
 const Container = styled.div`
   display: flex;
+  align-items: center;
   padding: 1rem 2.5rem;
   @media (max-width: 600px) {
     padding: 1rem 0.4rem;
@@ -61,7 +65,9 @@ const Wrapper = styled.div`
   border-radius: 0.7rem;
   padding: 0.6rem 1rem;
 `;
-const LogoIcon = styled.img``;
+const LogoIcon = styled.img`
+  width: 8rem;
+`;
 const NavbarSection = styled.div`
   display: flex;
   justify-content: center;
@@ -79,6 +85,9 @@ const Text = styled.p`
   color: white;
 `;
 const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 940px) {
     display: none;
   }
@@ -101,3 +110,4 @@ const SidebarWrapper = styled.div`
     display: flex;
   }
 `;
+

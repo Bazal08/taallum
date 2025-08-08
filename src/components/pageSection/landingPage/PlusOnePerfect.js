@@ -44,7 +44,7 @@ const PlusOnePerfect = () => {
 
   return (
     <Container>
-      <Title>Plus One Perfect For</Title>
+      <Title>Pillars of Islam</Title>
       <Wrapper>
         {sections.map((item, index) => (
           <Section key={index} $isEven={index % 2 !== 0}>

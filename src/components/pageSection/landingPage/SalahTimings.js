@@ -5,29 +5,47 @@ import styled from "styled-components";
 const steps = [
   {
     id: 1,
-    icon: "/images/icons/broweserIcon.svg",
-    title: "Browse Qualified Companions",
-    text: "Review detailed profiles of potential plus-ones, including their interests, experience, and availability.",
+    icon: "/images/namazicon/fajaricon.png",
+    title: "Fajr",
+    text: "4:30 AM ",
   },
   {
     id: 2,
-    icon: "/images/icons/contactsIcon.svg",
-    title: "Connect & Coordinate",
-    text: "Chat with your chosen companion through our secure platform to discuss event details and expectations.",
+    icon: "/images/namazicon/zahuricoh.png",
+    title: "Zahur",
+    text: "1: 30 PM",
   },
   {
     id: 3,
-    icon: "/images/icons/calender.svg",
-    title: "Enjoy Your Event",
-    text: "Attend your function with confidence, knowing you have a compatible companion by your side.",
+    icon: "/images/namazicon/asarIcon.png",
+    title: "Asar",
+    text: "5:15 PM",
+  },
+  {
+    id: 4,
+    icon: "/images/namazicon/magrib.png",
+    title: "Magrib",
+    text: "7:15 PM",
+  },
+  {
+    id: 5,
+    icon: "/images/namazicon/ishaicon.png",
+    title: "Isha",
+    text: "9:15 PM",
+  },
+  {
+    id: 6,
+    icon: "/images/namazicon/jumhaicon.png",
+    title: "Jummah",
+    text: "1:30 PM",
   },
 ];
 
-const HowWorks = () => {
+const SalahTimings = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>How it works</Title>
+        <Title>Salah Timings</Title>
         <StepsWrapper>
           {steps.map((step, index) => (
             <Step key={index}>
@@ -42,7 +60,7 @@ const HowWorks = () => {
   );
 };
 
-export default HowWorks;
+export default SalahTimings;
 
 const Container = styled.div`
   display: flex;
@@ -52,8 +70,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
   text-align: center;
   /* padding: 50px 20px; */
-  width: 85%;
   background: #f8fafd;
+  width: 100%;
   padding: 1.9rem;
 `;
 
@@ -67,7 +85,7 @@ const Title = styled.h2`
 const StepsWrapper = styled.div`
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 3rem;
   flex-wrap: wrap;
 `;
 
@@ -78,8 +96,8 @@ const Step = styled.div.withConfig({
   text-align: left;
   align-items: flex-start;
   background: #fff;
-  padding: 20px;
-  width: 20rem;
+  padding: 1rem 3rem;
+  /* width: 20rem; */
   border-radius: 12px;
   /* box-shadow: ${({ isActive }) =>
     isActive

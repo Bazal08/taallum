@@ -28,10 +28,13 @@ export default function Sidebar({ scrollToSection }) {
   };
 
   const navbarItems = [
-    { title: "Home", key: "home" },
-    { title: "How it Works", key: "howWorks" },
-    { title: "Safety & Trust", key: "security" },
-    { title: "Contact Us", key: "contact" },
+    { title: "Home", key: "home", link: "/" },
+    { title: "Salah Timings", key: "howWorks", link: "#howWorks" },
+    { title: "Safety & Trust", key: "security", link: "#security" },
+    { title: "Quran Classes", key: "contact", link: "#contact" },
+    { title: "Arabic Language", key: "contact", link: "#contact" },
+    { title: "Salah Timings", key: "contact", link: "#contact" },
+    { title: "Seminars", key: "contact", link: "#contact" },
   ];
 
   return (
@@ -59,7 +62,7 @@ export default function Sidebar({ scrollToSection }) {
               </ListItem>
             ))}
             <ButtonWrapper>
-              <Button>Join Waiting List Now</Button>
+              <Button>Booking</Button>
             </ButtonWrapper>
           </List>
           <Divider />
