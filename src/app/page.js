@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import ChooseUs from "@/components/pageSection/landingPage/ChooseUs";
+import Seminars from "@/components/pageSection/landingPage/Seminars";
 import HeroSection from "@/components/pageSection/landingPage/HeroSection";
 import PlusOnePerfect from "@/components/pageSection/landingPage/PlusOnePerfect";
 import Security from "@/components/pageSection/landingPage/Security";
@@ -23,7 +23,7 @@ const Page = () => {
         <SalahTimings />
       </div>
       <PlusOnePerfect />
-      <ChooseUs />
+      <Seminars />
       <div id="security">
         <Security />
       </div>

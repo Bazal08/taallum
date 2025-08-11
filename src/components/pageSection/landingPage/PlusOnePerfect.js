@@ -5,40 +5,36 @@ import styled from "styled-components";
 const PlusOnePerfect = () => {
   const sections = [
     {
-      title: "Wedding celebrations",
+      title: "Shahadah (Faith)",
+      des: "To bear witness that “There is no god but Allah, and Muhammad (ﷺ) is His Messenger.",
       description:
-        "Make every wedding unforgettable with the perfect companion by your side, turning moments into memories. Thanks to Plus One.",
-      image: "/images/images/celeberation.png",
+        "The Shahadah is the entry point into Islam and the foundation of a Muslim’s belief. It is a simple yet profound statement that affirms the oneness of Allah and the finality of the Prophet Muhammad ﷺ as His Messenger. By declaring this testimony with sincerity, one embraces the faith and commits to living according to its principles.",
+      image: "/images/pillarsofIslam/1.png",
     },
     {
-      title: "Corporate events & networking",
-      description:
-        "Elevate your corporate events and networking experiences with a professional companion who complements your presence.",
-      image: "/images/images/corporate.png",
+      title: "Salah (Prayer)",
+      des: "Performing the five daily prayers.",
+      description: "Salah is a direct connection between the believer and Allah. Muslims are required to pray five times a day at specific times: Fajr, Dhuhr, Asr, Maghrib, and Isha. Each prayer serves as a reminder of Allah’s presence and helps cleanse the heart from wrongdoing. Performing Salah regularly strengthens faith, builds discipline, and brings peace to the soul.",
+      image: "/images/pillarsofIslam/2.png",
     },
     {
-      title: "Family gatherings",
-      description:
-        "Bring warmth and ease to family gatherings with a friendly companion who blends in seamlessly and enhances every moment.",
-      image: "/images/images/gatherings.png",
+      title: "Zakah (Charity)",
+      des: "Giving a portion of wealth (2.5%) to those in need.",
+      description: "Zakah purifies wealth by redistributing it to those less fortunate. It’s not just charity — it’s a duty for every eligible Muslim. Through Zakah, the gap between the rich and poor is reduced, and society becomes more compassionate and balanced. Recipients may include the poor, the needy, and those in debt.",
+      image: "/images/pillarsofIslam/4.png",
     },
     {
-      title: "Travel companions",
-      description:
-        "Turn every journey into an unforgettable adventure with a travel companion who shares your excitement and makes every destination even more special.",
-      image: "/images/images/travel.png",
+      title: "Sawm (Fasting)",
+      des: "Abstaining from food, drink, and harmful actions from dawn to sunset during Ramadan.",
+      description: "Fasting in the month of Ramadan is a time of heightened spiritual reflection, self-control, and gratitude. Muslims fast from dawn (Fajr) until sunset (Maghrib), refraining from food, drink, and sinful behavior. Beyond physical discipline, Sawm cultivates empathy for the less fortunate and brings the community together in worship and remembrance of Allah.",
+      image: "/images/pillarsofIslam/5.png",
     },
     {
-      title: "Local experiences & adventures",
+      title: "Hajj (Pilgrimage) ",
+      des: "A sacred journey to Makkah once in a lifetime (if physically and financially able).",
       description:
-        "Discover the best of local experiences and adventures with a companion who makes every moment more exciting and memorable.",
-      image: "/images/images/adventure.png",
-    },
-    {
-      title: "Social functions & galas",
-      description:
-        "Shine at social functions and galas with a charming companion who ensures you make a statement and enjoy every moment to the fullest",
-      image: "/images/images/socialfunction.png",
+        "Hajj is a unique act of worship performed during the Islamic month of Dhul-Hijjah. Muslims from around the world gather in Makkah, wearing simple white garments to symbolize unity and equality before Allah. The pilgrimage includes a series of rituals tracing the steps of Prophet Ibrahim (AS) and his family, reminding believers of sacrifice, humility, and devotion.",
+      image: "/images/pillarsofIslam/6.png",
     },
   ];
 
@@ -51,6 +47,7 @@ const PlusOnePerfect = () => {
             <Card $isEven={index % 2 !== 0}>
               <Content $isEven={index % 2 !== 0}>
                 <Heading>{item.title}</Heading>
+                <Description>{item.des}</Description>
                 <Description>{item.description}</Description>
               </Content>
               <ImageWrapper>
@@ -125,7 +122,7 @@ const Card = styled.div`
 
 const ImageWrapper = styled.div`
   /* width: 150px; */
-  height: 26rem;
+  height: 20rem;
   flex-shrink: 0;
   border-radius: 12px;
   overflow: hidden;
