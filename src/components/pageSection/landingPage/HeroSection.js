@@ -15,18 +15,18 @@ const HeroSection = () => {
             <Box>
               <BoxSection>
                 <IconWrapper>
-                  <Icon src="/images/colorblocks.svg" />
+                  <Icon src="/images/whitelogo.png" />
                 </IconWrapper>
-                <Header>Your Perfect Plus One, On Demand</Header>
+                <Header>Welcome to Taallum</Header>
                 <Description>
-                  Transform any occasion into a memorable experience with a
-                  carfully matched companion.
+                  Your guide to Understanding and Practicing Islam Explore our
+                  resources, join our community and deepen your faith
                 </Description>
-                <ButtonWrapper>
+                {/* <ButtonWrapper>
                   <Button onClick={() => setOpenModal(true)}>
                     Get Early Access Now
                   </Button>
-                </ButtonWrapper>
+                </ButtonWrapper> */}
               </BoxSection>
             </Box>
           </BoxWrapper>
@@ -39,7 +39,9 @@ const HeroSection = () => {
 
 export default HeroSection;
 
-const Container = styled.div``;
+const Container = styled.div`
+  margin-top: 2rem;
+`;
 const Wrapper = styled.div``;
 const BoxWrapper = styled.div`
   display: flex;
@@ -71,7 +73,9 @@ const BoxSection = styled.div`
   align-items: flex-start;
   gap: 1.2rem;
 `;
-const Icon = styled.img``;
+const Icon = styled.img`
+  width: 6rem;
+`;
 const IconWrapper = styled.div``;
 const Header = styled.h1`
   font-size: 2.8rem;

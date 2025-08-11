@@ -17,7 +17,7 @@ const Page = () => {
     <Container>
       <Div>
         <Navbar />
-        {/* <HeroSection /> */}
+        <HeroSection />
       </Div>
       <div id="howWorks">
         <SalahTimings />
