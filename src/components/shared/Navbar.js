@@ -10,10 +10,10 @@ const Navbar = ({ scrollToSection }) => {
   const navbarItems = [
     { title: "Home", key: "home", link: "/" },
     { title: "Salah Timings", key: "howWorks", link: "#howWorks" },
-    { title: "Safety & Trust", key: "security", link: "#security" },
+    { title: "About" },
     { title: "Quran Classes", key: "contact", link: "#contact" },
-    { title: "Arabic Language", key: "contact", link: "#contact" },
-    { title: "Salah Timings", key: "contact", link: "#contact" },
+    { title: "Blogs & News", key: "contact", link: "#contact" },
+    // { title: "Salah Timings", key: "contact", link: "#contact" },
     { title: "Seminars", key: "contact", link: "#contact" },
   ];
 
@@ -33,7 +33,7 @@ const Navbar = ({ scrollToSection }) => {
           </NavbarSection>
           <ButtonWrapper>
             <Button onClick={() => setOpenModal(true)}>
-              Bookings
+              Contact
             </Button>
           </ButtonWrapper>
           <SidebarWrapper>

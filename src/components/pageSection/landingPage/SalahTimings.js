@@ -7,37 +7,55 @@ const steps = [
     id: 1,
     icon: "/images/namazicon/fajaricon.png",
     title: "Fajr",
-    text: "4:30 AM ",
+    text: "4:30 ",
+    jammah: "Jammah",
+    time: "4:30 ",
+  },
+  {
+    id: 1,
+    icon: "/images/namazicon/fajaricon.png",
+    title: "Shurooq",
+    text: "05:37 ",      
   },
   {
     id: 2,
     icon: "/images/namazicon/zahuricoh.png",
-    title: "Zahur",
-    text: "1: 30 PM",
+    title: "Dhuhr",
+    text: "13:11 ",
+    jammah: "Jammah",
+    time: "13:30 ",
   },
   {
     id: 3,
     icon: "/images/namazicon/asarIcon.png",
-    title: "Asar",
-    text: "5:15 PM",
+    title: "Asr",
+    text: "17:15 ",
+    jammah: "Jammah",
+    time: "18:00 ",
   },
   {
     id: 4,
     icon: "/images/namazicon/magrib.png",
     title: "Magrib",
-    text: "7:15 PM",
+    text: "20:45 ",
+    jammah: "Jammah",
+    time: "20:45 ",
   },
   {
     id: 5,
     icon: "/images/namazicon/ishaicon.png",
     title: "Isha",
-    text: "9:15 PM",
+    text: "21:52 ",
+    jammah: "Jammah",
+    time: "combined with magrib",
   },
   {
     id: 6,
     icon: "/images/namazicon/jumhaicon.png",
-    title: "Jummah",
-    text: "1:30 PM",
+    title: "Friday Prayer",
+    // text: "13:00 ",
+    jammah: "Start At",
+    time: "13:00 ",
   },
 ];
 
@@ -51,7 +69,9 @@ const SalahTimings = () => {
             <Step key={index}>
               <Icon src={step.icon} alt={step.title} />
               <CardTitle>{step.title}</CardTitle>
-              <Text>{step.text}</Text>
+              <Text>{step.text}</Text>  
+              <CardTitle>{step.jammah}</CardTitle>
+              <Text>{step.time}</Text>  
             </Step>
           ))}
         </StepsWrapper>
@@ -92,6 +112,8 @@ const StepsWrapper = styled.div`
 const Step = styled.div.withConfig({
   shouldForwardProp: (prop) => prop !== "isActive",
 })`
+display: flex;
+gap: 0.8rem;
   flex-direction: column;
   text-align: left;
   align-items: flex-start;

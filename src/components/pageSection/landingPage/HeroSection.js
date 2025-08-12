@@ -17,7 +17,7 @@ const HeroSection = () => {
                 <IconWrapper>
                   <Icon src="/images/whitelogo.png" />
                 </IconWrapper>
-                <Header>Welcome to Taallum</Header>
+                <Header>Welcome to Ta'Allum</Header>
                 <Description>
                   Your guide to Understanding and Practicing Islam Explore our
                   resources, join our community and deepen your faith

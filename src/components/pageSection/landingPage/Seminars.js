@@ -14,19 +14,19 @@ const testimonials1 = [
     title: "alexrocks",
     content:
       "Mila Thompson's trip vlogs are incredibly educational in addition to being aesthetically beautiful. I've used her advice to plan a ton of vacations!",
-    image: "/images/pillarsofIslam/5.png",
+    image: "/images/pillarsofIslam/1.png",
   },
   {
     title: "sophiej",
     content:
       "Ethan Grey's genuineness is what I adore about him. He is really relatable since he discusses genuine moments rather than simply the highlights.",
-    image: "/images/pillarsofIslam/5.png",
+      image: "/images/pillarsofIslam/2.png",
   },
   {
     title: "livcreates",
     content:
       "I've been a fan of Lucas Bennett since the beginning and have seen him develop into one of Instagram's most genuine creators. He consistently prioritizes his community and never wavers from his moral principles. There's always something worthwhile to learn from his candid product evaluations, workout advice, or simply updates on his daily life. Lucas, keep it up!",
-    image: "/images/pillarsofIslam/5.png",
+      image: "/images/pillarsofIslam/4.png",
   },
   {
     title: "nathanbuzz",
@@ -38,20 +38,20 @@ const testimonials1 = [
     title: "ethanlive",
     content:
       "I have been a longtime fan of Aiden Clark. His commitment to mental and physical well-being has greatly inspired me to lead a healthy lifestyle.",
-    image: "/images/pillarsofIslam/5.png",
+      image: "/images/pillarsofIslam/6.png",
   },
-  {
-    title: "gracemood",
-    content:
-      "Every day, Jaxon Hayes infuses my feed with such positive energy!",
-    image: "/images/pillarsofIslam/5.png",
-  },
-  {
-    title: "ryantoday",
-    content:
-      "Jaxon Hayes' content never fails to brighten my day and bring positive vibes to my feed.",
-    image: "/images/pillarsofIslam/5.png",
-  },
+  // {
+  //   title: "gracemood",
+  //   content:
+  //     "Every day, Jaxon Hayes infuses my feed with such positive energy!",
+  //   image: "/images/pillarsofIslam/5.png",
+  // },
+  // {
+  //   title: "ryantoday",
+  //   content:
+  //     "Jaxon Hayes' content never fails to brighten my day and bring positive vibes to my feed.",
+  //   image: "/images/pillarsofIslam/5.png",
+  // },
 ];
 
 const allTestimonials1 = [...testimonials1, ...testimonials1];

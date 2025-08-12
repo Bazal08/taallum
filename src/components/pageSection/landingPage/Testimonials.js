@@ -53,9 +53,9 @@ const Testimonials = () => {
   };
 
   const getVisibleTestimonials = useMemo(() => {
-    if (!isClient) return [testimonials[activeIndex]]; 
+    if (!isClient) return [testimonials[activeIndex]];
     if (window.innerWidth <= 600) {
-      return [testimonials[activeIndex]]; 
+      return [testimonials[activeIndex]];
     }
     const total = testimonials.length;
     const prevIndex = (activeIndex - 1 + total) % total;
@@ -64,7 +64,7 @@ const Testimonials = () => {
       testimonials[prevIndex],
       testimonials[activeIndex],
       testimonials[nextIndex],
-    ]; 
+    ];
   }, [activeIndex, isClient]);
 
   return (
@@ -76,7 +76,7 @@ const Testimonials = () => {
             key={index}
             active={index === 1 || (isClient && window.innerWidth <= 600)}
           >
-            <ProfilePic src={item.img} alt={item.name} />
+            {/* <ProfilePic src={item.img} alt={item.name} /> */}
             <Name>{item.name}</Name>
             <Role>{item.role}</Role>
             <Text>{item.text}</Text>

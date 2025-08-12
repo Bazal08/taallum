@@ -24,9 +24,9 @@ const Page = () => {
       </div>
       <PlusOnePerfect />
       <Seminars />
-      <div id="security">
+      {/* <div id="security">
         <Security />
-      </div>
+      </div> */}
       <Testimonials />
       <WaitingList />
       <div id="contact">
