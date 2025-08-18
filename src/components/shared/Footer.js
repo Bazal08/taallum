@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <Container>
       <Wrapper>
-        <Icon src="/images/images/logoblack.png" />
+        <Icon src="/images/logo.png" />
         <ListItem>
           {footerItem.map((item, index) => (
             <Item key={index}>
