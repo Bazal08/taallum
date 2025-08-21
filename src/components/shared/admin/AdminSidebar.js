@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Drawer from "@mui/material/Drawer";
 import styled from "styled-components";
 import { ChevronDown, ChevronUp } from "lucide-react";
@@ -45,12 +46,14 @@ const AdminSidebar = () => {
     {
       id: 6,
       title: "Blogs",
-      icon: "/images/sidebarIcons/blogIcon.svg",
-      route: "/blogs",
+      icon: "/images/icons/blog-Managment.svg",
+      route: ROUTES.ADMIN_BLOG,
     },
   ];
 
+
   const pathname = usePathname();
+  const router = useRouter();
   const [expanded, setExpanded] = useState({});
 
   const toggleExpand = (id) => {
@@ -67,7 +70,7 @@ const AdminSidebar = () => {
       <SidebarContainer>
         <TopSection>
           <LogoWrapper>
-            <Logo src="/images/weesharelogo.svg" alt="Logo" />
+            <Logo src="/images/whitelogo.png" alt="Logo" />
           </LogoWrapper>
           <SearchBar placeholder="Search for..." />
           <NavList>
@@ -79,9 +82,16 @@ const AdminSidebar = () => {
 
               return (
                 <React.Fragment key={item.id}>
+
                   <NavItem
                     $isActive={isSectionActive}
-                    onClick={() => hasSubmenu && toggleExpand(item.id)}
+                    onClick={() => {
+                      if (item.route) {
+                        router.push(item.route);
+                      } else if (hasSubmenu) {
+                        toggleExpand(item.id);
+                      }
+                    }}
                   >
                     <ItemContent>
                       <Icon src={item.icon} alt={item.title} />

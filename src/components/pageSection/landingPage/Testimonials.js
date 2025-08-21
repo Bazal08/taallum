@@ -126,7 +126,7 @@ const Card = styled.div`
   padding: 20px;
   margin: 1rem;
   border-radius: 2rem;
-  background: ${({ active }) => (active ? "#0066FF" : "#f5f5f5")};
+  background: ${({ active }) => (active ? "#8e9ab0" : "#f5f5f5")};
   color: ${({ active }) => (active ? "#fff" : "#000")};
   text-align: center;
   transition: all 0.4s ease-in-out;
@@ -171,7 +171,7 @@ const Controls = styled.div`
 `;
 
 const ArrowButton = styled.button`
-  background: ${({ primary }) => (primary ? "#0066FF" : "#ccc")};
+  background: ${({ primary }) => (primary ? "#8e9ab0" : "#ccc")};
   color: ${({ primary }) => (primary ? "#fff" : "#333")};
   border: none;
   width: 40px;

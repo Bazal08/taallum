@@ -1,12 +1,12 @@
 "use client";
-import LoginForm from "@/components/templates/form/LoginForm";
+import AdminBlog from "@/components/pageSection/adminPages/AdminBlogs";
 import React from "react";
 import styled from "styled-components";
 
 const page = () => {
   return (
     <Container>
-      <LoginForm />
+      <AdminBlog />
     </Container>
   );
 };

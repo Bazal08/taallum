@@ -20,13 +20,13 @@ const testimonials1 = [
     title: "sophiej",
     content:
       "Ethan Grey's genuineness is what I adore about him. He is really relatable since he discusses genuine moments rather than simply the highlights.",
-      image: "/images/pillarsofIslam/2.png",
+    image: "/images/pillarsofIslam/2.png",
   },
   {
     title: "livcreates",
     content:
       "I've been a fan of Lucas Bennett since the beginning and have seen him develop into one of Instagram's most genuine creators. He consistently prioritizes his community and never wavers from his moral principles. There's always something worthwhile to learn from his candid product evaluations, workout advice, or simply updates on his daily life. Lucas, keep it up!",
-      image: "/images/pillarsofIslam/4.png",
+    image: "/images/pillarsofIslam/4.png",
   },
   {
     title: "nathanbuzz",
@@ -38,7 +38,7 @@ const testimonials1 = [
     title: "ethanlive",
     content:
       "I have been a longtime fan of Aiden Clark. His commitment to mental and physical well-being has greatly inspired me to lead a healthy lifestyle.",
-      image: "/images/pillarsofIslam/6.png",
+    image: "/images/pillarsofIslam/6.png",
   },
   // {
   //   title: "gracemood",
@@ -339,7 +339,8 @@ const Header = styled.div`
 `;
 
 const Card = styled.div`
-  background-color: #1f1f1f;
+  /* background-color: #1f1f1f; */
+  background: linear-gradient(90deg, #6b7280, #8e9ab0);
   border-radius: 1rem;
   margin: 0rem 0.5rem;
   padding: 1.4rem;
@@ -371,7 +372,6 @@ const Avatar = styled.img`
   height: 100%;
   object-fit: cover;
 
-
   @media (max-width: 600px) {
     width: 2rem;
   }
@@ -394,7 +394,8 @@ const Name = styled.div`
 `;
 
 const SliderRightOverlay = styled.div`
-  background-color: rgba(17, 17, 17, 0.68);
+  background-color: rgba(188, 165, 165, 0.68);
+  /* background-color: rgba(17, 17, 17, 0.68); */
   width: 500px;
   height: 500px;
   top: 12%;
@@ -417,7 +418,8 @@ const SliderRightOverlay = styled.div`
 `;
 
 const SliderLeftOverlay = styled.div`
-  background-color: rgba(17, 17, 17, 0.68);
+  /* background-color: rgba(17, 17, 17, 0.68); */
+  background-color: rgba(188, 165, 165, 0.68);
   width: 500px;
   height: 500px;
   top: 12%;

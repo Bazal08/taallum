@@ -11,6 +11,7 @@ const Navbar = ({ scrollToSection }) => {
     { title: "Home", key: "home", link: "/" },
     { title: "Salah Timings", key: "howWorks", link: "/#howWorks" },
     { title: "About" },
+    { title: "Arabic Language", key: "", link: "/pages/arabiclanguage" },
     { title: "Quran Classes", key: "contact", link: "/#contact" },
     { title: "Blogs & News", key: "contact", link: "/pages/blog" },
     // { title: "Salah Timings", key: "contact", link: "#contact" },
@@ -57,7 +58,9 @@ const Container = styled.div`
   }
 `;
 const Wrapper = styled.div`
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
+  background: rgba(113, 107, 107, 0.3);
+  /* background-color: #7690a7; */
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -101,7 +104,7 @@ const Button = styled.button`
   cursor: pointer;
   color: white;
   border-radius: 1rem;
-  background-color: #0066ff;
+  background-color: #8e9ab0;
 `;
 const SidebarWrapper = styled.div`
   display: none;

@@ -40,7 +40,7 @@ const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(90deg, #4a8df8, #0066ff);
+  background: linear-gradient(90deg, #6b7280, #8e9ab0);
   border-radius: 20px;
   width: 80%;
   padding: 4rem 3.8rem;
