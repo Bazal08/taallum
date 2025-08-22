@@ -99,7 +99,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   font-size: 2.8rem;
-  color: #1a3a5f;
+  color: #8e9ab0;
   margin-bottom: 12px;
   @media (max-width: 768px) {
     font-size: 2.2rem;
@@ -122,7 +122,7 @@ const ProgramsSection = styled.section`
 
 const SectionTitle = styled.h2`
   font-size: 2rem;
-  color: #2c5282;
+  color: #8e9ab0;
   margin-bottom: 30px;
 `;
 
@@ -134,7 +134,8 @@ const ProgramsGrid = styled.div`
 `;
 
 const Card = styled.div`
-  background: white;
+  /* background: white; */
+  background: #8e9ab0;
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -161,7 +162,7 @@ const CardTitle = styled.h3`
 
 const CardDesc = styled.p`
   font-size: 1rem;
-  color: #555;
+  color: white;
   line-height: 1.6;
   margin-bottom: 14px;
 `;
@@ -173,24 +174,25 @@ const CardLevel = styled.small`
 `;
 
 const FeaturesSection = styled.div`
-  background: #e6f2ff;
-  padding: 24px;
+  background: #c1c8cfff;
+  padding: 3.5rem;
   border-radius: 12px;
-  margin: 40px auto;
+  margin: 2rem auto;
   max-width: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 0.8rem;
   font-size: 1rem;
   color: #2c3c5a;
 `;
 
 const FeatureItem = styled.span`
-  background: #b3d9ff;
-  color: #003366;
+  background: linear-gradient(90deg, #6b7280, #8e9ab0);
+  color: #d0d9e2ff;
   padding: 8px 14px;
   border-radius: 20px;
+  margin-top: 0.4rem;
   font-size: 0.95rem;
 `;
 

@@ -166,7 +166,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   font-size: 2.8rem;
-  color: #1e40af;
+  color: #8e9ab0;
   margin-bottom: 12px;
   @media (max-width: 768px) {
     font-size: 2.2rem;
@@ -193,9 +193,11 @@ const Features = styled.div`
 `;
 
 const Feature = styled.span`
-  background: #dbeafe;
-  color: #1e40af;
-  padding: 8px 16px;
+  /* background: #dbeafe; */
+  background: linear-gradient(90deg, #6b7280, #8e9ab0);
+
+  color: #dde2ebff;
+  padding: 0.8rem 1.3rem;
   border-radius: 20px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -213,7 +215,7 @@ const FormSection = styled.section`
 
 const FormTitle = styled.h2`
   font-size: 2rem;
-  color: #1e3a8a;
+  color: #8e9ab0;
   margin-bottom: 20px;
   text-align: center;
 `;
@@ -265,7 +267,7 @@ const Select = styled.select`
   border-radius: 8px;
   font-size: 1rem;
   background: white;
-color: black;
+  color: black;
   &:focus {
     outline: none;
     border-color: #3b82f6;

@@ -13,9 +13,9 @@ const Navbar = ({ scrollToSection }) => {
     { title: "About" },
     { title: "Arabic Language", key: "", link: "/pages/arabiclanguage" },
     { title: "Quran Classes", key: "", link: "/pages/quranClass" },
-    { title: "Blogs & News", key: "contact", link: "/pages/blog" },
+    { title: "Blogs & News", key: "", link: "/pages/blog" },
     // { title: "Salah Timings", key: "contact", link: "#contact" },
-    { title: "Seminars", key: "contact", link: "#contact" },
+    { title: "Seminars", key: "", link: "/pages/seminarPage" },
   ];
 
   return (
