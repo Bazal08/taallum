@@ -205,7 +205,7 @@ const Feature = styled.span`
 
 const FormSection = styled.section`
   background: white;
-  padding: 40px;
+  padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   max-width: 700px;

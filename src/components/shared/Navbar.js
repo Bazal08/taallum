@@ -54,7 +54,7 @@ const Container = styled.div`
   align-items: center;
   padding: 1rem 2.5rem;
   @media (max-width: 600px) {
-    padding: 1rem 0.4rem;
+    padding: 0.4rem 0.4rem;
   }
 `;
 const Wrapper = styled.div`
@@ -67,6 +67,9 @@ const Wrapper = styled.div`
   border: 1px solid gray;
   border-radius: 0.7rem;
   padding: 0.6rem 1rem;
+    @media (max-width: 600px) {
+    padding: 0rem;
+  }
 `;
 const LogoIcon = styled.img`
   width: 8rem;

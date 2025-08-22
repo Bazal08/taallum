@@ -164,6 +164,10 @@ const Container = styled.div`
   border-top: 4px solid #b3bac6ff;
   padding: 4rem 0 2rem;
   margin-top: 5rem;
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+    padding: 1rem 0 2rem;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -186,6 +190,10 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 const LogoSection = styled.div`

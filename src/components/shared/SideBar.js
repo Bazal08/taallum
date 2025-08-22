@@ -29,12 +29,13 @@ export default function Sidebar({ scrollToSection }) {
 
   const navbarItems = [
     { title: "Home", key: "home", link: "/" },
-    { title: "Salah Timings", key: "howWorks", link: "#howWorks" },
-    { title: "Safety & Trust", key: "security", link: "#security" },
-    { title: "Quran Classes", key: "contact", link: "#contact" },
-    { title: "Arabic Language", key: "contact", link: "#contact" },
-    { title: "Salah Timings", key: "contact", link: "#contact" },
-    { title: "Seminars", key: "contact", link: "#contact" },
+    { title: "Salah Timings", key: "howWorks", link: "/#howWorks" },
+    { title: "About" },
+    { title: "Arabic Language", key: "", link: "/pages/arabiclanguage" },
+    { title: "Quran Classes", key: "", link: "/pages/quranClass" },
+    { title: "Blogs & News", key: "", link: "/pages/blog" },
+    // { title: "Salah Timings", key: "contact", link: "#contact" },
+    { title: "Seminars", key: "", link: "/pages/seminarPage" },
   ];
 
   return (
@@ -50,11 +51,11 @@ export default function Sidebar({ scrollToSection }) {
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
         >
-          <LogoIcon src="/images/images/logoblack.png" />
+          <LogoIcon src="/images/logo.png" />
           <List>
             {navbarItems.map((item, index) => (
               <ListItem key={index} disablePadding>
-                <ListItemButton onClick={() => scrollToSection(item.key)}>
+                <ListItemButton href={item.link}>
                   <DescriptionSmall textColor={"black"}>
                     {item.title}
                   </DescriptionSmall>
