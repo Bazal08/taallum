@@ -12,7 +12,7 @@ const Navbar = ({ scrollToSection }) => {
     { title: "Salah Timings", key: "howWorks", link: "/#howWorks" },
     { title: "About" },
     { title: "Arabic Language", key: "", link: "/pages/arabiclanguage" },
-    { title: "Quran Classes", key: "contact", link: "/#contact" },
+    { title: "Quran Classes", key: "", link: "/pages/quranClass" },
     { title: "Blogs & News", key: "contact", link: "/pages/blog" },
     // { title: "Salah Timings", key: "contact", link: "#contact" },
     { title: "Seminars", key: "contact", link: "#contact" },
@@ -22,7 +22,7 @@ const Navbar = ({ scrollToSection }) => {
     <>
       <Container>
         <Wrapper>
-          <LogoIcon src="/images/whitelogo.png" />
+          <LogoIcon src="/images/whitelogo.png"/>
           <NavbarSection>
             {navbarItems.map((item, index) => (
               <a href={item.link} key={index}>
