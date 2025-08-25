@@ -12,6 +12,7 @@ const Navbar = ({ scrollToSection }) => {
     { title: "Salah Timings", key: "howWorks", link: "/#howWorks" },
     { title: "About" },
     { title: "Arabic Language", key: "", link: "/pages/arabiclanguage" },
+    // { title: "Quran Classes", key: "", link: "/pages/quranClass" },
     { title: "Quran Classes", key: "", link: "/pages/quranClass" },
     { title: "Blogs & News", key: "", link: "/pages/blog" },
     // { title: "Salah Timings", key: "contact", link: "#contact" },
@@ -22,7 +23,7 @@ const Navbar = ({ scrollToSection }) => {
     <>
       <Container>
         <Wrapper>
-          <LogoIcon src="/images/whitelogo.png"/>
+          <LogoIcon src="/images/whitelogo.png" />
           <NavbarSection>
             {navbarItems.map((item, index) => (
               <a href={item.link} key={index}>
@@ -33,9 +34,7 @@ const Navbar = ({ scrollToSection }) => {
             ))}
           </NavbarSection>
           <ButtonWrapper>
-            <Button onClick={() => setOpenModal(true)}>
-              Contact
-            </Button>
+            <Button onClick={() => setOpenModal(true)}>Contact</Button>
           </ButtonWrapper>
           <SidebarWrapper>
             <Sidebar scrollToSection={scrollToSection} />
@@ -67,7 +66,7 @@ const Wrapper = styled.div`
   border: 1px solid gray;
   border-radius: 0.7rem;
   padding: 0.6rem 1rem;
-    @media (max-width: 600px) {
+  @media (max-width: 600px) {
     padding: 0rem;
   }
 `;
@@ -78,7 +77,7 @@ const NavbarSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 
   @media (max-width: 940px) {
     display: none;
@@ -116,4 +115,3 @@ const SidebarWrapper = styled.div`
     display: flex;
   }
 `;
-

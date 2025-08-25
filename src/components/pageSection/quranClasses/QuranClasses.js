@@ -195,7 +195,6 @@ const Features = styled.div`
 const Feature = styled.span`
   /* background: #dbeafe; */
   background: linear-gradient(90deg, #6b7280, #8e9ab0);
-
   color: #dde2ebff;
   padding: 0.8rem 1.3rem;
   border-radius: 20px;
