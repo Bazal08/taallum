@@ -1,16 +1,16 @@
 "use client";
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
 const HotDesk = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    date: '',
-    startTime: '09:00',
-    duration: '2',
-    purpose: 'Quran Recitation',
-    specialRequest: '',
+    name: "",
+    email: "",
+    date: "",
+    startTime: "09:00",
+    duration: "2",
+    purpose: "Quran Recitation",
+    specialRequest: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -34,8 +34,9 @@ const HotDesk = () => {
       <Wrapper>
         <Title>📚 Hot Desk – Quiet Workspace for Private Study</Title>
         <Subtitle>
-          Need a peaceful, distraction-free space for Quran recitation, memorization, 
-          or personal study? Book a private hot desk in our serene learning center.
+          Need a peaceful, distraction-free space for Quran recitation,
+          memorization, or personal study? Book a private hot desk in our serene
+          learning center.
         </Subtitle>
 
         <Features>
@@ -50,14 +51,16 @@ const HotDesk = () => {
         <BookingSection>
           <SectionTitle>Book Your Quiet Workspace</SectionTitle>
           <CostNote>
-            <strong>Costs will be announced soon.</strong> Early bookings are free for our pilot phase!
+            <strong>Costs will be announced soon.</strong> Early bookings are
+            free for our pilot phase!
           </CostNote>
 
           {isSubmitted ? (
             <SuccessMessage>
-              Thank you, <strong>{formData.name}</strong>! Your desk has been reserved for{' '}
-              <strong>{formData.date}</strong> from {formData.startTime} for {formData.duration} hour(s).
-              We'll email you confirmation shortly.
+              Thank you, <strong>{formData.name}</strong>! Your desk has been
+              reserved for <strong>{formData.date}</strong> from{" "}
+              {formData.startTime} for {formData.duration} hour(s). We'll email
+              you confirmation shortly.
             </SuccessMessage>
           ) : (
             <Form onSubmit={handleSubmit}>
@@ -140,10 +143,16 @@ const HotDesk = () => {
                   value={formData.purpose}
                   onChange={handleChange}
                 >
-                  <option value="Quran Recitation">Quran Recitation (Tajweed)</option>
-                  <option value="Hifz (Memorization)">Hifz (Memorization)</option>
+                  <option value="Quran Recitation">
+                    Quran Recitation (Tajweed)
+                  </option>
+                  <option value="Hifz (Memorization)">
+                    Hifz (Memorization)
+                  </option>
                   <option value="Arabic Study">Arabic Language Study</option>
-                  <option value="Personal Reflection">Personal Reflection/Dhikr</option>
+                  <option value="Personal Reflection">
+                    Personal Reflection/Dhikr
+                  </option>
                   <option value="Other">Other (Specify below)</option>
                 </Select>
               </InputGroup>
@@ -175,7 +184,7 @@ const Container = styled.div`
   width: 100%;
   background: #f8fafc;
   padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   color: #333;
 `;
 
@@ -187,7 +196,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   font-size: 2.6rem;
-  color: #1e3a8a;
+  color: #8e9ab0;
   margin-bottom: 16px;
   @media (max-width: 768px) {
     font-size: 2.1rem;
@@ -213,8 +222,8 @@ const Features = styled.div`
 `;
 
 const Feature = styled.span`
-  background: #e0f2fe;
-  color: #0369a1;
+  background: linear-gradient(90deg, #6b7280, #8e9ab0);
+  color: #dde2ebff;
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.95rem;
@@ -269,6 +278,9 @@ const Row = styled.div`
 `;
 
 const HalfGroup = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
   flex: 1;
   min-width: 200px;
 `;
@@ -282,6 +294,8 @@ const Label = styled.label`
 const Input = styled.input`
   padding: 12px;
   border: 1px solid #d1d5db;
+  background-color: white;
+  color: black;
   border-radius: 8px;
   font-size: 1rem;
   &:focus {
@@ -296,6 +310,7 @@ const Select = styled.select`
   border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 1rem;
+  color: black;
   background: white;
   &:focus {
     outline: none;
@@ -308,6 +323,8 @@ const Textarea = styled.textarea`
   padding: 12px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
+  background-color: white;
+  color: black;
   font-size: 1rem;
   resize: vertical;
   &:focus {
@@ -320,7 +337,7 @@ const Textarea = styled.textarea`
 const SubmitButton = styled.button`
   margin-top: 16px;
   padding: 14px;
-  background: #0284c7;
+  background: linear-gradient(90deg, #6b7280, #8e9ab0);
   color: white;
   font-size: 1.1rem;
   font-weight: 600;
@@ -330,7 +347,7 @@ const SubmitButton = styled.button`
   transition: background 0.3s ease;
 
   &:hover {
-    background: #0369a1;
+  background: linear-gradient(90deg, #8e9ab0, #6b7280);
   }
 `;
 

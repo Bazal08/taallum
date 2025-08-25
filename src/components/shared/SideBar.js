@@ -1,18 +1,14 @@
-import { useState } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
 import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import DescriptionSmall from "../templates/text/DescriptionSmall";
+import { useState } from "react";
 import styled from "styled-components";
-import MenuIcon from "@mui/icons-material/Menu";
+import DescriptionSmall from "../templates/text/DescriptionSmall";
 
 export default function Sidebar({ scrollToSection }) {
   const [open, setOpen] = useState(false);
@@ -32,9 +28,10 @@ export default function Sidebar({ scrollToSection }) {
     { title: "Salah Timings", key: "howWorks", link: "/#howWorks" },
     { title: "About" },
     { title: "Arabic Language", key: "", link: "/pages/arabiclanguage" },
+    // { title: "Quran Classes", key: "", link: "/pages/quranClass" },
     { title: "Quran Classes", key: "", link: "/pages/quranClass" },
     { title: "Blogs & News", key: "", link: "/pages/blog" },
-    // { title: "Salah Timings", key: "contact", link: "#contact" },
+    { title: "HotDesk", key: "", link: "/pages/hotdesk" },
     { title: "Seminars", key: "", link: "/pages/seminarPage" },
   ];
 
@@ -55,7 +52,7 @@ export default function Sidebar({ scrollToSection }) {
           <List>
             {navbarItems.map((item, index) => (
               <ListItem key={index} disablePadding>
-                <ListItemButton href={item.link}>
+                <ListItemButton href={item.link} >
                   <DescriptionSmall textColor={"black"}>
                     {item.title}
                   </DescriptionSmall>
@@ -63,7 +60,7 @@ export default function Sidebar({ scrollToSection }) {
               </ListItem>
             ))}
             <ButtonWrapper>
-              <Button>Booking</Button>
+              <Button>Contact</Button>
             </ButtonWrapper>
           </List>
           <Divider />
