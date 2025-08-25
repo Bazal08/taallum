@@ -10,7 +10,8 @@ const Navbar = ({ scrollToSection }) => {
   const navbarItems = [
     { title: "Home", key: "home", link: "/" },
     { title: "Salah Timings", key: "howWorks", link: "/#howWorks" },
-    { title: "About" },
+    { title: "About", key: "", link: "/pages/about" },
+    // { title: "About" },
     { title: "Arabic Language", key: "", link: "/pages/arabiclanguage" },
     // { title: "Quran Classes", key: "", link: "/pages/quranClass" },
     { title: "Quran Classes", key: "", link: "/pages/quranClass" },

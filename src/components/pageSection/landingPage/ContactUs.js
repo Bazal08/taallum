@@ -187,7 +187,6 @@ const Image = styled.img`
 const SubmitButton = styled.button`
   /* background: #0066ff; */
   background: linear-gradient(90deg, #6b7280, #8e9ab0);
-
   color: white;
   padding: 0.8rem;
   border: none;
