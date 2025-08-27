@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Seminars from "@/components/pageSection/landingPage/Seminars";
 import HeroSection from "@/components/pageSection/landingPage/HeroSection";
-import PlusOnePerfect from "@/components/pageSection/landingPage/PlusOnePerfect";
+import PillarsofIslam from "@/components/pageSection/landingPage/PillarsofIslam";
 import Security from "@/components/pageSection/landingPage/Security";
 import Testimonials from "@/components/pageSection/landingPage/Testimonials";
 import WaitingList from "@/components/pageSection/landingPage/WaitingList";
@@ -22,7 +22,7 @@ const Page = () => {
       <div id="howWorks">
         <SalahTimings />
       </div>
-      <PlusOnePerfect />
+      <PillarsofIslam />
       <Seminars />
       {/* <div id="security">
         <Security />

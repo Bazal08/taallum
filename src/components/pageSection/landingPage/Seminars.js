@@ -222,7 +222,7 @@ const ReadMore = styled.button`
 const Head = styled.h3`
   font-size: 2rem;
   font-weight: 700;
-  color: #e1e1e1;
+  color: #5b6475;
   @media (max-width: 768px) {
     display: none;
   }

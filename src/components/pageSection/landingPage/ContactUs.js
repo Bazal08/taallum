@@ -36,13 +36,13 @@ const ContactUs = () => {
   });
   return (
     <Container>
-      <HeaderLarge fontSize={"2rem"} fontWeight={600}>
+      <HeaderLarge fontSize={"2rem"} fontWeight={600} color={"#5b6475"} >
         Contact Us
       </HeaderLarge>
       <Wrapper>
-        <ImageWrapper>
+        {/* <ImageWrapper>
           <Image src="/images/images/mobile.png" />
-        </ImageWrapper>
+        </ImageWrapper> */}
         <Form onSubmit={formik.handleSubmit}>
           <InputBox>
             <TextLabel>Name</TextLabel>

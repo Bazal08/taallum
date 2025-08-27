@@ -105,7 +105,7 @@ const Title = styled.h2`
   font-size: 24px;
   font-weight: bold;
   margin: 2rem;
-  color: black;
+  color: #5b6475;
 `;
 
 const Carousel = styled.div`
