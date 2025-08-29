@@ -16,7 +16,7 @@ const Navbar = ({ scrollToSection }) => {
     // { title: "Quran Classes", key: "", link: "/pages/quranClass" },
     { title: "Quran Classes", key: "", link: "/pages/quranClass" },
     { title: "Blogs & News", key: "", link: "/pages/blog" },
-    { title: "HotDesk", key: "", link: "/pages/hotdesk" },
+    { title: "HotDesk & connference", key: "", link: "/pages/hotdesk" },
     { title: "Seminars", key: "", link: "/pages/seminarPage" },
   ];
 
@@ -52,7 +52,7 @@ export default Navbar;
 const Container = styled.div`
   display: flex;
   align-items: center;
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
   @media (max-width: 600px) {
     padding: 0.4rem 0.4rem;
   }
@@ -78,7 +78,7 @@ const NavbarSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
 
   @media (max-width: 940px) {
     display: none;
@@ -89,6 +89,11 @@ const NavbarItems = styled.div`
 `;
 const Text = styled.p`
   color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  &:hover {
+    color: #8e9ab0;
+  }
 `;
 const ButtonWrapper = styled.div`
   display: flex;
@@ -112,7 +117,7 @@ const Button = styled.button`
 const SidebarWrapper = styled.div`
   display: none;
 
-  @media (max-width: 940px) {
+  @media (max-width: 980px) {
     display: flex;
   }
 `;

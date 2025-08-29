@@ -136,7 +136,7 @@ const HotDesk = () => {
                 (8+ hours)
               </li>
               <li>☕ Unlimited tea, coffee & water</li>
-              <li>📵 Distraction-free, phone-free environment</li>
+              {/* <li>📵 Distraction-free, phone-free environment</li> */}
             </ul>
           </InfoBox>
         )}
@@ -266,7 +266,7 @@ const HotDesk = () => {
                 </HalfGroup>
               </Row>
 
-              {service === "hot-desk" && (
+              {/* {service === "hot-desk" && (
                 <InputGroup>
                   <Label>Purpose of Visit</Label>
                   <Select
@@ -287,7 +287,7 @@ const HotDesk = () => {
                     <option value="Other">Other</option>
                   </Select>
                 </InputGroup>
-              )}
+              )} */}
 
               <InputGroup>
                 <Label>Special Requests</Label>

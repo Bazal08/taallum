@@ -52,7 +52,7 @@ export default function Sidebar({ scrollToSection }) {
           <List>
             {navbarItems.map((item, index) => (
               <ListItem key={index} disablePadding>
-                <ListItemButton href={item.link} >
+                <ListItemButton href={item.link}>
                   <DescriptionSmall textColor={"black"}>
                     {item.title}
                   </DescriptionSmall>

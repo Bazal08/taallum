@@ -3461,7 +3461,7 @@ const SalahTimings = () => {
       title: "Fajr",
       text: times.fajr,
       jammah: "Jammah",
-      time: times.fajrIqama, // Default Iqama
+      time: "Fajr not prayer in Ta'Allum", // Default Iqama
     },
     {
       id: 2,
@@ -3507,7 +3507,7 @@ const SalahTimings = () => {
       title: "Friday Prayer",
       // jammah: "Starts at",
       // time: "13:00",
-      text: "Friday Prayer not available in Ta'Allum",
+      text: "Friday not prayer in Ta'Allum",
     },
   ];
 
